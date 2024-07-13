@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"jieshouduan\startup_stm32f103xb.o"
+"jieshouduan\main.o"
+"jieshouduan\gpio.o"
+"jieshouduan\usart.o"
+"jieshouduan\stm32f1xx_it.o"
+"jieshouduan\stm32f1xx_hal_msp.o"
+"jieshouduan\stm32f1xx_hal_gpio_ex.o"
+"jieshouduan\stm32f1xx_hal_tim.o"
+"jieshouduan\stm32f1xx_hal_tim_ex.o"
+"jieshouduan\stm32f1xx_hal_uart.o"
+"jieshouduan\stm32f1xx_hal.o"
+"jieshouduan\stm32f1xx_hal_rcc.o"
+"jieshouduan\stm32f1xx_hal_rcc_ex.o"
+"jieshouduan\stm32f1xx_hal_gpio.o"
+"jieshouduan\stm32f1xx_hal_dma.o"
+"jieshouduan\stm32f1xx_hal_cortex.o"
+"jieshouduan\stm32f1xx_hal_pwr.o"
+"jieshouduan\stm32f1xx_hal_flash.o"
+"jieshouduan\stm32f1xx_hal_flash_ex.o"
+"jieshouduan\stm32f1xx_hal_exti.o"
+"jieshouduan\system_stm32f1xx.o"
+--strict --scatter "JieShouDuan\JieShouDuan.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "JieShouDuan.map" -o JieShouDuan\JieShouDuan.axf
